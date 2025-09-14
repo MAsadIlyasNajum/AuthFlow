@@ -18,4 +18,10 @@ buildscript {
     }
 }
 
+project.ext.react = [
+    nodeExecutableAndArgs: ["/usr/local/bin/node"],
+    npxCommand          : "/usr/local/bin/npx"
+]
+
+
 apply plugin: "com.facebook.react.rootproject"
