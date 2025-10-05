@@ -1,98 +1,141 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# 📱 User Authentication App
 
-# Getting Started
+A **multilingual React Native app** featuring **user authentication**, **theme switching (Light / Dark / System)**, and **persistent storage** — built using **React Context API**, **AsyncStorage**, and **React Navigation**.
 
-> **Note**: Make sure you have completed the [Set Up Your Environment](https://reactnative.dev/docs/set-up-your-environment) guide before proceeding.
+---
 
-## Step 1: Start Metro
+## 🎯 Project Objective
 
-First, you will need to run **Metro**, the JavaScript build tool for React Native.
+This app was created as part of an assignment with the following goals:
 
-To start the Metro dev server, run the following command from the root of your React Native project:
+> **Create a React Native Authentication Flow** using **Context API** to manage global state.
 
-```sh
-# Using npm
-npm start
+### ✅ Requirements Implemented
 
-# OR using Yarn
-yarn start
+- Login & Signup Screens with Validations  
+- Authentication stored globally using **React Context**  
+- Persistent login using **AsyncStorage**  
+- Navigation using **React Navigation**  
+- Elegant UI with reusable components  
+- Password visibility toggle  
+- 🎁 **Bonus:**  
+  - ✅ **Multilingual Support** (English 🇬🇧 / Bahasa Malaysia 🇲🇾)  
+  - ✅ **Theme Support** (Light / Dark / System-based auto-selection)  
+
+---
+
+## 🚀 Features
+
+| Feature | Description |
+|---------|-------------|
+| 🔐 Authentication | Login / Signup / Logout using Context API |
+| 📦 Persistent Storage | Authentication & preferences stored using AsyncStorage |
+| 🌗 Dark / Light Theme | System default with manual toggle |
+| 🌍 Multilingual Support | English & Bahasa Malaysia |
+| 👁️ Password Visibility | Show/hide password input |
+| 🧭 Navigation | React Navigation (Stack-based flow) |
+| 🎨 Reusable Components | Custom Input, Button, Text, Header, StatusBar |
+
+---
+
+## 🛠 Tech Stack
+
+| Category | Technology |
+|----------|------------|
+| Framework | React Native CLI |
+| Language | TypeScript |
+| State Management | React Context API |
+| Storage | AsyncStorage |
+| Navigation | React Navigation |
+| Internationalization | i18next |
+| Icons | React Native Vector Icons |
+
+---
+
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the Repository
+
+```bash
+https://github.com/MAsadIlyasNajum/AuthFlow.git
+cd AuthFlow
 ```
 
-## Step 2: Build and run your app
+### 2️⃣ Install Dependencies
 
-With Metro running, open a new terminal window/pane from the root of your React Native project, and use one of the following commands to build and run your Android or iOS app:
+```bash
 
-### Android
+npm install
 
-```sh
-# Using npm
+```
+
+### 3️⃣ Install iOS Pods
+
+```bash
+
+cd ios && pod install && cd ..
+
+```
+
+### ▶️ Running the App
+
+#### ✅ Android (Development)
+```bash
+
 npm run android
+# OR
+npx react-native run-android
 
-# OR using Yarn
-yarn android
 ```
 
-### iOS
+#### ✅ IOS (Development)
+```bash
 
-For iOS, remember to install CocoaPods dependencies (this only needs to be run on first clone or after updating native deps).
-
-The first time you create a new project, run the Ruby bundler to install CocoaPods itself:
-
-```sh
-bundle install
-```
-
-Then, and every time you update your native dependencies, run:
-
-```sh
-bundle exec pod install
-```
-
-For more information, please visit [CocoaPods Getting Started guide](https://guides.cocoapods.org/using/getting-started.html).
-
-```sh
-# Using npm
 npm run ios
 
-# OR using Yarn
-yarn ios
 ```
 
-If everything is set up correctly, you should see your new app running in the Android Emulator, iOS Simulator, or your connected device.
 
-This is one way to run your app — you can also build it directly from Android Studio or Xcode.
+### 📦 Production Build
 
-## Step 3: Modify your app
+```bash
 
-Now that you have successfully run the app, let's make changes!
+cd android && ./gradlew clean && cd ..
 
-Open `App.tsx` in your text editor of choice and make some changes. When you save, your app will automatically update and reflect these changes — this is powered by [Fast Refresh](https://reactnative.dev/docs/fast-refresh).
+cd android && ./gradlew assembleRelease && cd ..
 
-When you want to forcefully reload, for example to reset the state of your app, you can perform a full reload:
 
-- **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Dev Menu**, accessed via <kbd>Ctrl</kbd> + <kbd>M</kbd> (Windows/Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (macOS).
-- **iOS**: Press <kbd>R</kbd> in iOS Simulator.
+```
 
-## Congratulations! :tada:
 
-You've successfully run and modified your React Native App. :partying_face:
 
-### Now what?
+## 🖼 Screenshots
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [docs](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you're having issues getting the above steps to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
-# AuthFlow
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/7b798f2d-06c3-4f24-a8db-32728c5874a9" width="250"/></td>
+    <td><img src="https://github.com/user-attachments/assets/33d80e86-5f98-4b26-ab6f-8553d96f51f1" width="250"/></td>
+    <td><img src="https://github.com/user-attachments/assets/e5d01139-379e-46cf-87aa-83afa5584247" width="250"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/fbf3abfb-a96e-47d6-a753-02edf21e1024" width="250"/></td>
+    <td><img src="https://github.com/user-attachments/assets/1228a570-01aa-4095-bec4-3a32ec2f80f3" width="250"/></td>
+    <td><img src="https://github.com/user-attachments/assets/89dddf3f-b9d9-4e45-9e95-d08ee435f204" width="250"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/2ba609ff-16b6-4a9b-9602-770ccb317c9d" width="250"/></td>
+    <td><img src="https://github.com/user-attachments/assets/01bcad0e-6b76-4a82-9551-b16789ac1dda" width="250"/></td>
+    <td><img src="https://github.com/user-attachments/assets/59b7966a-6584-4de3-84ec-f824380f40d6" width="250"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/f407651b-5218-48e0-b9c7-481fd7a20404" width="250"/></td>
+    <td><img src="https://github.com/user-attachments/assets/457ca1cb-1b3d-4f42-9bcf-6120b1e79ef2" width="250"/></td>
+    <td><img src="https://github.com/user-attachments/assets/be3e722f-797b-43fd-9785-d7f72c552d6d" width="250"/></td>
+  </tr>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/faafd736-f955-4272-8278-3fc1ecd418b4" width="250"/></td>
+  </tr>
+</table>
